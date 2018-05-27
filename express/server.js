@@ -12,7 +12,7 @@ app.use((req,res,next)=>{
     next();
 });
 app.get('/',(req,res)=>{
-    res.send('<h1>Hello express</h1>');
+    res.send('<h1>Hello Namit NEET RANK:100</h1>');
 });
 app.get('/about',(req,res)=>{
     //res.send('<h1>Hello express</h1>');
