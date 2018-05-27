@@ -1,6 +1,7 @@
 const express=require('express');
 const hbs=require('hbs');
 var app=express();
+const port=process.env.PORT || 3000;
 // set app related parameters.
 app.set('view engine','hbs');
 hbs.registerPartials('../views/partials');
@@ -33,6 +34,6 @@ app.post('/about',(req,res)=>{
     };
     res.send(JSON.stringify(obj,undefined,2));
 });
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server Started');
 });
